@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('fonts/glyphicons-halflings-regular.eot');
+    src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.checkAbs {
+  position: absolute;
+  top: 25px;
+}
+
+.checkboxAbs {
+  position: absolute;
+  top: 15px;
+}
+
+.travelPackItem {
+  padding-left: 50px
+}
+
+.travelPackItemNew {
+  padding-left: 20px
+}
+
+.mapFullBtn {
+  font-size: 20px;
+}
+
+.mapFullIcon {
+  margin-left: 10px;
+	/*vertical-align: middle;*/
+}
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  /*background: transparent;*/
+  background: #ffffff;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}

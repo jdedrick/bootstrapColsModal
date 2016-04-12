@@ -19,15 +19,63 @@ body {
 .checkAbs {
   position: absolute;
   top: 25px;
+  transition: all .2s ease-in-out;
 }
 
-.checkboxAbs {
+.checkAbs:hover {
+  /*transform: scale(1.4);*/
+  cursor: pointer;
+}
+
+/*.checkboxAbs {
   position: absolute;
   top: 15px;
+}*/
+.checkAbs {
+    position: absolute;
+    top: 35%;
+    left: 80px;
+    font-size: 60px;
+    /* border-color: yellow; */
+    color: whitesmoke;
+}
+
+.checkSzSm {
+
+  /*transform: scale(1);*/
+}
+.checkSzLg {
+  transform: scale(1.8);
+  color: #A7A7A7;
 }
 
 .travelPackItem {
-  padding-left: 50px
+
+  background-color: #ECECEC;
+  -o-transition: color 0.5s linear;
+-moz-transition: color 0.5s linear;
+-khtml-transition: color 0.5s linear;
+-webkit-transition: color 0.5s linear;
+-ms-transition: color 0.5s linear;
+transition: color 0.5s linear;
+
+  padding: 30px 30px 30px 125px;
+    text-align: center;
+
+    cursor: pointer;
+    cursor: hand;
+}
+
+.travelPackItem:hover {
+  background-color: #E1E3EC;
+}
+
+.odd {
+  background-color: #E4E4E4;
+}
+
+.travelPackItem h3 {
+    font-size: 30px;
 }
 
 .travelPackItemNew {

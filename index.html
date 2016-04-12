@@ -63,8 +63,8 @@
         <div class="travelPackItemHolder clearfix">
           <div class="row">
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
-              <div class="travelPackItem">
+              <span class="glyphicon glyphicon-unchecked checkAbs checkSzSm"></span>
+              <div class="travelPackItem odd">
                 <h3><sup>$</sup>25<sup>/mo</sup></h3>
                 <p>
                   <strong>US Combo Pack 25</strong>
@@ -76,7 +76,7 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
+              <span class="glyphicon glyphicon-unchecked checkAbs"></span>
               <div class="travelPackItem">
                 <h3><sup>$</sup>35<sup>/mo</sup></h3>
                 <p>
@@ -88,8 +88,8 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
-              <div class="travelPackItem">
+              <span class="glyphicon glyphicon-unchecked checkAbs"></span>
+              <div class="travelPackItem odd">
                 <h3><sup>$</sup>60<sup>/mo</sup></h3>
                 <p>
                   <strong>US Combo Pack 60</strong>
@@ -101,7 +101,7 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
+              <span class="glyphicon glyphicon-unchecked checkAbs"></span>
               <div class="travelPackItem">
                 <h3><sup>$</sup>100<sup>/mo</sup></h3>
                 <p>
@@ -114,8 +114,8 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
-              <div class="travelPackItem">
+              <span class="glyphicon glyphicon-unchecked checkAbs"></span>
+              <div class="travelPackItem odd">
                 <h3><sup>$</sup>20<sup>/mo</sup></h3>
                 <p>
                   <strong>100 Minutes</strong>
@@ -125,7 +125,7 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
+              <span class="glyphicon glyphicon-unchecked checkAbs"></span>
               <div class="travelPackItem">
                 <h3><sup>$</sup>20<sup>/mo</sup></h3>
                 <p>
@@ -136,8 +136,8 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-xs-12">
-              <span class="glyphicon glyphicon-check checkAbs"></span>
-              <div class="travelPackItem">
+              <span class="glyphicon glyphicon-unchecked checkAbs"></span>
+              <div class="travelPackItem odd">
                 <h3><sup>$</sup>20<sup>/mo</sup></h3>
                 <p>
                   <strong>100 MB</strong>
@@ -170,7 +170,7 @@
               <div class="checkbox checkbox-circle checkboxAbs">
                   <input id="checkbox7" type="checkbox">
               </div>
-              <div class="travelPackItemNew">
+              <div class="travelPackItemNew odd">
                 <h3><sup>$</sup>25<sup>/mo</sup></h3>
                 <p>
                   <strong>US Combo Pack 25</strong>
@@ -202,7 +202,7 @@
               <div class="checkbox checkbox-circle checkboxAbs">
                   <input id="checkbox7" type="checkbox">
               </div>
-              <div class="travelPackItemNew">
+              <div class="travelPackItemNew odd">
                 <h3><sup>$</sup>60<sup>/mo</sup></h3>
                 <p>
                   <strong>US Combo Pack 60</strong>
@@ -234,7 +234,7 @@
               <div class="checkbox checkbox-circle checkboxAbs">
                   <input id="checkbox7" type="checkbox">
               </div>
-              <div class="travelPackItemNew">
+              <div class="travelPackItemNew odd">
                 <h3><sup>$</sup>20<sup>/mo</sup></h3>
                 <p>
                   <strong>100 Minutes</strong>
@@ -262,7 +262,7 @@
               <div class="checkbox checkbox-circle checkboxAbs">
                   <input id="checkbox7" type="checkbox">
               </div>
-              <div class="travelPackItemNew">
+              <div class="travelPackItemNew odd">
                 <h3><sup>$</sup>20<sup>/mo</sup></h3>
                 <p>
                   <strong>100 MB</strong>
@@ -348,6 +348,14 @@
   <script src="bootstrap.min.js"></script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  <script>
+    $('.travelPackItem, .checkAbs').on('click', function() {
+      //$(this).parent('div').closest('.checkAbs').css('font-size','100px');
+      $(this).parent().find('.checkAbs').toggleClass( "glyphicon-check glyphicon-unchecked").toggleClass("checkSzLg checkSzSm");
+      //$(this).parent().find('.checkAbs').animate({fontSize: '100px'}, {duration: 500, easing: "swing"});
+    });
+  </script>
 </body>
 
 </html>
